@@ -1,0 +1,161 @@
+# Docker compose file for a SFTP
+version: '2'
+
+services:
+    database:
+        container_name: SFTP_Database
+        image: t3ctechnologies/mariadb:1.0
+        networks:
+            - linshare-backend-tier
+        environment:
+            - MYSQL_DATABASE=sftp
+            - MYSQL_ROOT_PASSWORD=root
+        volumes:
+            - my-datavolume:/var/lib/mysql
+
+    waarp-r66:
+        container_name: waarpr66_backend
+        image: t3ctechnologies/anchel-r66:1.0
+        links:
+            - database:SFTP_Database
+        networks:
+            - linshare-tomcat-tier
+            - linshare-backend-tier
+        environment:
+            - MARIADB_URL=SFTP_Database
+        volumes:
+            - ./conf/waarpdb.properties:/usr/local/tomcat/webapps/anchelR66/WEB-INF/classes/waarpdb.properties
+            - /usr/local/tomcat
+            - anchel-gateway:/usr/local/tomcat/test
+            - anchel-r66in:/usr/local/tomcat/in
+            - anchel-r66out:/usr/local/tomcat/out
+
+    waarp-gateway:
+        container_name: gateway_backend
+        image: t3ctechnologies/anchel-gateway:1.0
+        links:
+            - database:SFTP_Database
+            - waarp-r66:waarpr66_backend
+        depends_on:
+            - waarp-r66
+        networks:
+            - linshare-tomcat-tier
+            - linshare-backend-tier
+        environment:
+            - MARIADB_URL=SFTP_Database
+        volumes:
+            - ./conf/waarpdb.properties:/usr/local/tomcat/webapps/anchelGateway/WEB-INF/classes/waarpdb.properties
+            - /usr/local/tomcat
+            - anchel-gateway:/usr/local/tomcat/test
+            - anchel-r66in:/usr/local/tomcat/in
+            - anchel-r66out:/usr/local/tomcat/out
+
+    linshare:
+        container_name: linshare_backend
+        image: t3ctechnologies/anchel-core:1.0
+        links:
+            - database:SFTP_Database
+            - mongodb:linshare_mongodb
+            - waarp-gateway:gateway_backend
+            
+        networks:
+            - linshare-web-tier
+            - linshare-tomcat-tier
+            - linshare-service-tier
+            - linshare-backend-tier
+        volumes:
+            - ./conf/catalina.properties:/usr/local/tomcat/conf/catalina.properties
+            - ./conf/linshare.properties:/usr/local/tomcat/webapps/linshare/WEB-INF/classes/linshare.properties
+            - /usr/local/tomcat
+            - anchel-gateway:/usr/local/tomcat/test
+            - anchel-r66in:/usr/local/tomcat/in
+            - anchel-r66out:/usr/local/tomcat/out
+
+        environment:
+            # These variables are mandatory
+            - MARIADB_URL=SFTP_Database
+            - MONGODB_URL=linshare_mongodb
+            - LINSHARE_URL=linshare_backend
+            - WAARP_URL=waarp_backend
+
+    frontend:
+        container_name: linshare_frontend
+        build: ./frontend
+        ports:
+            - 80:80
+            - 443:443
+        networks:
+            - linshare-web-tier
+        volumes:
+            - ./ssl/linshare.pem:/usr/local/apache2/conf/server.crt
+            - ./ssl/linshare.key:/usr/local/apache2/conf/server.key
+            - ./ssl/ca.pem:/usr/local/apache2/conf/server-ca.pem
+            - ./conf/home:/usr/local/apache2/htdocs/home
+            - ./README.md:/usr/local/apache2/htdocs/home/md/README.md
+    
+    ui-admin:
+        container_name: linshare_ui-admin
+        image: t3ctechnologies/anchel-admin-ui:1.0
+        networks:
+            - linshare-web-tier
+            - linshare-tomcat-tier
+        volumes:
+            - ./ssl/ca.pem:/usr/local/apache2/conf/ssl/server-ca.crt
+            - ./ssl/linshare.pem:/usr/local/apache2/conf/ssl/server.crt
+            - ./ssl/linshare.key:/usr/local/apache2/conf/ssl/server.key
+        environment:
+            - EXTERNAL_URL=auser.linshare.local
+            - TOMCAT_URL=linshare_backend
+            - TOMCAT_PORT=8080
+
+    ui-user:
+        container_name: linshare_ui-user
+        image: t3ctechnologies/anchel-ui:1.0
+        networks:
+            - linshare-web-tier
+            - linshare-tomcat-tier
+        volumes:
+            - ./ssl/ca.pem:/usr/local/apache2/conf/ssl/server-ca.crt
+            - ./ssl/linshare.pem:/usr/local/apache2/conf/ssl/server.crt
+            - ./ssl/linshare.key:/usr/local/apache2/conf/ssl/server.key
+        environment:
+            - EXTERNAL_URL=suser.linshare.local
+            - TOMCAT_URL=linshare_backend
+            - TOMCAT_PORT=8080
+    mongodb:
+        container_name: linshare_mongodb
+        image: mongo:3.2
+        volumes:
+            - ./data/mongodb_data/db:/data/db
+        networks:
+            - linshare-backend-tier
+        command: mongod --smallfiles
+    smtp:
+        container_name: linshare_smtp
+        image: linagora/opensmtpd
+        networks:
+            - linshare-service-tier
+        volumes:
+            - ./conf/smtpd.conf:/etc/smtpd/smtpd.conf
+
+    clamav:
+        container_name: linshare_clamav
+        image: mkodockx/docker-clamav
+        networks:
+            - linshare-backend-tier
+
+networks:
+    linshare-tomcat-tier:
+        driver: bridge
+    linshare-web-tier:
+        driver: bridge
+    linshare-backend-tier:
+        driver: bridge
+    linshare-service-tier:
+        driver: bridge
+
+volumes:
+    my-datavolume:
+    anchel-gateway:
+    anchel-r66in:
+    anchel-r66out:
