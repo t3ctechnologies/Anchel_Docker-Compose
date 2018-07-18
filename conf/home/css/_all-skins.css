@@ -80,9 +80,9 @@
   color: #212121;
   background: transparent;
 }
-.skin-blue .sidebar-menu > li.active > a {
+/* .skin-blue .sidebar-menu > li.active > a {
   border-left-color: #3c8dbc;
-}
+} */
 .skin-blue .sidebar-menu > li > .treeview-menu {
   margin: 0 20px;
   background: transparent;

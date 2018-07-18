@@ -968,3 +968,14 @@ body {
         padding: 0px;
     }
 }
+
+/* .treeview-menu > li:hover{
+    background: #f8b32a;
+} */
+.treeview-menu > li:hover ul{
+    background: #ecf0f5;
+}
+.treeview-menu > li > a:hover{
+    background: #f8b32a;
+    color: #264997 !important;
+}
