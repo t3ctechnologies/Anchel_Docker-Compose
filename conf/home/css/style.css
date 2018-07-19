@@ -393,7 +393,7 @@ body {
      left: 76px; 
      top: 3360px; 
      position: absolute; 
-     width: 320px;
+     width: 322px;
      height: 190px;
      z-index:36;
 } 
@@ -583,7 +583,7 @@ body {
      left: 53px; 
      top: 3575px; 
      position: absolute; 
-     width: 615px;
+     width: 625px;
      height: 362px;
      z-index:55;
 } 
@@ -741,15 +741,18 @@ body {
 #Bestofbreedopensourc p{
     font-size: 26px;
     color: #555;
+    font-family: 'Muli', sans-serif;
 }
 #Manageanddistributef p{
     font-size: 26px;
     color: #555;
+    font-family: 'Muli', sans-serif;
 }
 #GetStarted h2{
     font-size: 36px;
     text-align: center;
     color: #ffffff;
+    font-family: 'Muli', sans-serif;
 }
 #Layer5 span i{
     font-size: 30px;
@@ -763,28 +766,32 @@ body {
     font-size: 40px;
     font-weight: 800;
     color: #fff;
+    font-family: 'Muli', sans-serif;
 }
 #Runonpremisesoronthe p{
     font-size: 28px;
     color: #fff;
+    font-family: 'Muli', sans-serif;
 }
 
 #Payasyougomodelstopg p{
     font-size: 28px;
     color: #fff;
+    font-family: 'Muli', sans-serif;
 }
 
 #Capabilities h2{
     color: #fff;
     font-size: 40px;
     font-weight: 800;
+    font-family: 'Muli', sans-serif;
 }
 
 #IntegrtedUserProv a h4{
     color: #fff;
     font-size: 30px;
     cursor:pointer;
-    
+    font-family: 'Muli', sans-serif;
 }
 #IntegrtedUserProv a{
     text-decoration:none;
@@ -792,7 +799,8 @@ body {
 
 #reportDashboard h4{
     color: #fff;
-    font-size: 30px;
+    font-size: 29px;
+    font-family: 'Muli', sans-serif;
 }
 #reportDashboard a{
     text-decoration:none;
@@ -808,14 +816,16 @@ body {
     font-size: 40px;
     font-weight: 800;
     color: #fff;
+    font-family: 'Muli', sans-serif;
 }
 
 #Runonmultipledevices h4{
-    font-size: 30px;
+    font-size: 29px;
     color: #fff;
     -ms-transform:rotate(-390deg); /* IE 9 */
     -webkit-transform: rotate(-390deg);/* Safari 3-8 */
     transform: rotate(-390deg);
+    font-family: 'Muli', sans-serif;
 }
 
 #Thickclientavailable h4{
@@ -833,63 +843,75 @@ body {
     color: #c1334b;
     text-shadow: 0 0 3px #c1334b;
 }
-#Abilitytostopandresu  h4{
+#Abilitytostopandresu h4{
     color: #fff;
-    font-size: 30px;
+    font-size: 29px;
     -ms-transform:rotate(-390deg); /* IE 9 */
     -webkit-transform: rotate(-390deg);/* Safari 3-8 */
     transform: rotate(-390deg);
+    font-family: 'Muli', sans-serif;
 }
 #LeverageNonrepudiati h4{
     color: #fff;
-    font-size: 30px;
+    font-size: 29px;
     -ms-transform:rotate(-390deg); /* IE 9 */
     -webkit-transform: rotate(-390deg); /* Safari 3-8 */
     transform: rotate(-390deg);
+    font-family: 'Muli', sans-serif;
 }
 
 #Compliance h2{
     color: #fff;
     font-weight: 800;
     font-size: 40px;
+    font-family: 'Muli', sans-serif;
 }
 #SupportforHIPAASOXan p{
     color: #fff;
-    font-size: 40px;
+    font-size: 39px;
     transform: rotate(-325deg);
+    font-family: 'Muli', sans-serif;
 }
 #Support h2{
     color: #212121;
     font-size: 40px;
     font-weight: 800;
     text-align: center;
+    font-family: 'Muli', sans-serif;
 }
 #Integrateyourcustomn p{
     color: #212121;
     font-size: 30px;
+    font-family: 'Muli', sans-serif;
 }
 #EmailUs h2{
     color: #be6f34;
     font-size: 40px;
     font-weight: 800;
+    font-family: 'Muli', sans-serif;
 }
 #Secure h2{
     color: #fff;
     font-size: 40px;
     font-weight: 800;
+    font-family: 'Muli', sans-serif;
 }
 #Alldataintransititen p{
     color: #fff;
-    font-size: 30px;
+    font-size: 29px;
+    font-family: 'Muli', sans-serif;
 }
 
 #Abilitytosecuredataa p{
     font-size: 30px;
     color: #fff;
+    font-family: 'Muli', sans-serif;
 }
 #Automaticallyscanfor p{
     color: #fff;
     font-size: 30px;
+    font-family: 'Muli', sans-serif;
+}
 }
 
 /* @media (min-width:1440px){
@@ -980,11 +1002,13 @@ body {
 
 
 .content-wrapper .content h3{
-	font-weight: bold;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
 }
 .content-wrapper .content .AboutAnchelEndUser p{
     font-size: 18px;
     text-align: justify;
+    font-family: 'Muli', sans-serif;
 }
 .content-wrapper .content .about{
 	padding: 0 75px;
@@ -995,6 +1019,7 @@ body {
 .content-wrapper .content .AboutAnchelEndUser ul li{
     font-size: 18px;
     text-align: justify;
+    font-family: 'Muli', sans-serif;
 }
 @media (max-width:425px){
     .content-wrapper .content .about{
@@ -1018,4 +1043,11 @@ body {
         display: flex;
         position: relative;
     }
+}
+
+.AboutAnchelEndUser table thead tr th{
+    font-family: 'Muli', sans-serif;
+}
+.AboutAnchelEndUser table tbody tr td{
+    font-family: 'Muli', sans-serif;
 }
