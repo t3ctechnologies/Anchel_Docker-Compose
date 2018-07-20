@@ -1085,12 +1085,12 @@ body {
         width: 80%;
     }
 }
-@media (min-width:1720px){
+@media (min-width:1920px){
     #Background #menu_bar{
         width: 68%;
     }
 }
-@media (min-width:1865px){
+@media (min-width:2560px){
     #Background #menu_bar{
         width: 52%;
     }
