@@ -1080,6 +1080,11 @@ body {
         width: 90%;
     }
 }
+@media (min-width:1865px){
+    #Background #menu_bar{
+        width: 80%;
+    }
+}
 @media (min-width:1720px){
     #Background #menu_bar{
         width: 68%;
