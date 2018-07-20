@@ -173,7 +173,7 @@ body {
  #Layer12 
 { 
      left: 900px; 
-     top: 6175px; 
+     top: 6150px; 
      position: absolute; 
      width: 679px;
      height: 525px;
@@ -239,7 +239,7 @@ body {
  #layer_21 
 { 
      left: 559px; 
-     top: 415px; 
+     top: 550px; 
      position: absolute; 
      width: 160px;
      height: 369px;
@@ -249,7 +249,7 @@ body {
  #layer_22 
 { 
      left: 763px; 
-     top: 475px; 
+     top: 635px; 
      position: absolute; 
      width: 209px;
      height: 231px;
@@ -360,7 +360,7 @@ body {
 { 
      /* left: 1059px; 
      top: 5936px;  */
-     left: 870px;
+     left: 900px;
      top: 6060px;
      position: absolute; 
      width: 366px;
@@ -471,7 +471,7 @@ body {
  #Manageanddistributef 
 { 
      left: 934px; 
-     top: 732px; 
+     top: 850px; 
      position: absolute; 
      width: 409px;
      height: 147px;
@@ -480,8 +480,8 @@ body {
 
  #Layer6 
 { 
-     left: 921px; 
-     top: 954px; 
+     left: 683px; 
+     top: 150px; 
      position: absolute; 
      width: 424px;
      height: 332px;
@@ -912,7 +912,7 @@ body {
     font-size: 30px;
     font-family: 'Muli', sans-serif;
 }
-}
+
 
 /* @media (min-width:1440px){
     #background{
@@ -952,32 +952,51 @@ body {
     }
 } */
 
-#background .navbar{
-    position: absolute;
+#menu_bar{
+    /* background-color: #333; */
+    position: fixed;
+    top: 0;
+   /*  width: 100%; */
+    display:block;
+    transition: top 0.3s;
+  }
+  
+ /*  #menu_bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+
+#background #menu_bar{
+    /* position: absolute; */
     z-index: 999;
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
-#background .navbar ul{
+#background #menu_bar ul{
     display: inline-flex;
     list-style: none;
     margin: 20px 0;
 }
-/* #background .navbar ul li{
+/* #background #menu_bar ul li{
     margin: 20px;
 } */
-/* #background .navbar ul li:hover{
+/* #background #menu_bar ul li:hover{
     background: #ffcc33;
     padding: 5px 10px;
 } */
-#background .navbar ul li a{
+#background #menu_bar ul li a{
     text-decoration: none;
     color: #264997;
     font-size: 20px;
     font-weight: 600;
     padding: 0 15px;
 }
-#background .navbar ul li a:hover{
+#background #menu_bar ul li a:hover{
     padding: 5px 15px;
     background: #f8b32a;
     color: #fff;
@@ -998,8 +1017,22 @@ body {
     margin: 0 auto;
     color: #fff;
     font-size: 20px;
+    font-family: 'Muli', sans-serif;
 }
-
+.footer1{
+    top: 6450px;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.footer1 p{
+    margin: 0 auto;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Muli', sans-serif;
+}
 
 .content-wrapper .content h3{
     font-weight: bold;
@@ -1042,6 +1075,19 @@ body {
         margin: 0 auto;
         display: flex;
         position: relative;
+    }
+    #Background #menu_bar{
+        width: 90%;
+    }
+}
+@media (min-width:1680px){
+    #Background #menu_bar{
+        width: 80%;
+    }
+}
+@media (min-width:1865px){
+    #Background #menu_bar{
+        width: 52%;
     }
 }
 
