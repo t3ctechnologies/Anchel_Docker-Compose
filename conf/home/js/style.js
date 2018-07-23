@@ -2,13 +2,16 @@ $(document).ready(function() {
     
     $('.loadpage').click(function() {
         var pageRef = $(this).attr('href');
-        var url = window.location.href+pageRef;
+        var hash = this.hash;
+        alert(hash);
+       /*  var url = window.location.href+pageRef; */
         
         /* var href=url+pageRef; */
         var page = $(this).data('page');
+        var url = window.location.hash  + page;
         /*  var url = $(this).data('target'); */
         $.ajax({
-            url: page,
+            url: url,
             success: function(result){
                 $('.content-wrapper').html(result);
                 /* location.replace(url); */
@@ -22,7 +25,6 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var currentScroll = $(this).scrollTop();
-        console.log(currentScroll + " and " + previousScroll + " and " + headerOrgOffset);
         if(currentScroll > headerOrgOffset) {
             if (currentScroll > previousScroll) {
                 $('#menu_bar').fadeOut();
@@ -38,15 +40,5 @@ $(document).ready(function() {
     })
 
 
-$(window).on('load', function(){
-    $("#Layer5 a[href^='#']").on('click', function(e) {
-        e.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(this.hash).offset().top - 60
-          }, 1000, function(){
-              /* window.location.hash = hash; */
-          });
-    });
-});
+
 
