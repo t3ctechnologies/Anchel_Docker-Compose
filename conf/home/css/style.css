@@ -1090,24 +1090,24 @@ body {
         display: flex;
         position: relative;
     }
-    #Background #menu_bar{
+    /* #Background #menu_bar{
         width: 90%;
-    }
+    } */
 }
 @media (min-width:1680px){
-    #Background #menu_bar{
+    /* #Background #menu_bar{
         width: 80%;
-    }
+    } */
 }
 @media (min-width:1920px){
-    #Background #menu_bar{
+    /* #Background #menu_bar{
         width: 68%;
-    }
+    } */
 }
 @media (min-width:2560px){
-    #Background #menu_bar{
+   /*  #Background #menu_bar{
         width: 52%;
-    }
+    } */
 }
 
 .AboutAnchelEndUser table thead tr th{
