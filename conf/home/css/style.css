@@ -308,8 +308,8 @@ body {
 
  #Capabilities 
 { 
-     left: 1050px; 
-     top: 1900px; 
+     left: 961px; 
+     top: 2068px; 
      position: absolute; 
      width: 371px;
      height: 65px;
@@ -817,7 +817,7 @@ body {
    
 }
 #reportDashboard span:hover{
-    background: #89aa42;
+    background: #be6f34;
     color: #fff;
 }
     
@@ -965,15 +965,13 @@ body {
         z-index: 15;
     }
 } */
-
-/* .fixed{ */
-    /* background-color: #333; */
-    /* position: fixed; */
-    /* top: 0; */
-   /*  width: 100%; */
-    /* display:block;
-    transition: top 0.3s; */
-/*   } */
+/* 
+.fixed{
+    background-color: #333;
+    position: fixed;
+    display:block;
+    transition: top 0.3s;
+  } */
   
  /*  #menu_bar a {
     float: left;
@@ -1012,7 +1010,7 @@ body {
 }
 #background #menu_bar ul li a:hover{
     padding: 5px 15px;
-    background: #f8b32a;
+    background: #be6f34;
     color: #fff;
 }
 #Layer12 ul{
@@ -1090,7 +1088,7 @@ body {
         display: flex;
         position: relative;
     }
-    /* #Background #menu_bar{
+   /*  #Background #menu_bar{
         width: 90%;
     } */
 }
@@ -1100,12 +1098,12 @@ body {
     } */
 }
 @media (min-width:1920px){
-    /* #Background #menu_bar{
+   /*  #Background #menu_bar{
         width: 68%;
     } */
 }
 @media (min-width:2560px){
-   /*  #Background #menu_bar{
+    /* #Background #menu_bar{
         width: 52%;
     } */
 }

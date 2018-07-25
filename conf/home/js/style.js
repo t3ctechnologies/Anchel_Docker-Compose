@@ -39,6 +39,16 @@ $(document).ready(function() {
     });
     })
 
-
+$(window).on('load', function(){
+    $("#Layer5 a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top - 60
+            }, 1000, function(){
+                /* window.location.hash = hash; */
+        });
+    });
+});
 
 
