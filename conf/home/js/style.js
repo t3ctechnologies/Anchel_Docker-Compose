@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('.loadpage').click(function() {
         var pageRef = $(this).attr('href');
         var hash = this.hash;
-        alert(hash);
+      /*   alert(hash); */
        /*  var url = window.location.href+pageRef; */
         
         /* var href=url+pageRef; */
