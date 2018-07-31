@@ -124,6 +124,12 @@ body {
     margin:10px;
     padding-top: 50px;
   }
+  .main-header .logo .logo-lg {
+    display: flex;
+  }
+  .main-header .logo .logo-lg img{
+    margin: 0 auto;
+  }
 }
 @media (max-width: 1024px) {
   .fixed .content-wrapper{
@@ -432,7 +438,8 @@ a:focus {
 .main-sidebar {
   position: absolute;
   top: 0;
-  left: 50px;
+  /* left: 50px; */
+  left: 200px;
   padding-top: 120px;
   min-height: 100%;
   width: 230px;
