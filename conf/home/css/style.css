@@ -1521,7 +1521,7 @@ font-size: 15px;
 @media (min-width:1024px){
     .gif{
         position: relative;
-        right: unset;
+        right: -90px;
         
     }
     .flexible-block .flexImg{
@@ -1579,9 +1579,9 @@ font-size: 15px;
     .capabilities-block .title-block h4{
         top:-280px;
     }
+	.flexible-block .flexImg{
+		margin-top: -320px;
+		margin-left: -250px;
+	}
     
-}
-.flexible-block .flexImg{
-    margin-top: -320px;
-    margin-left: -250px;
 }
