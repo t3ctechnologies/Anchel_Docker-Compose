@@ -1427,8 +1427,10 @@ font-size: 15px;
         margin: 0 auto;
     } 
     .contact{
-        position: unset !important;
-        top:0px !important;
+        /* position: unset !important;
+        top:0px !important; */
+		position: relative !important;
+		top: -25px !important;
     }
     .footer {
         position: relative !important;
