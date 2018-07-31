@@ -1550,12 +1550,12 @@ font-size: 15px;
     } */
 
 }
-@media(max-width:1024px) and (min-width:1024px){
+@media(max-width:1440px) and (min-width:1024px){
 	.flexible-block .flexImg{
         width: 30% !important;
         display: block !important;
         position: relative !important;
-        bottom: -260px !important;
+        bottom: 216px !important;
     }
 }
 @media (min-width:1024px){
