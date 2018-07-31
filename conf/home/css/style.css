@@ -1411,6 +1411,12 @@ font-size: 15px;
         top:0px !important;
         right:0px !important;
     }
+    .email-block .title-block ul{
+        display:flex;
+    }
+    .email-block .title-block ul li{
+        margin: 0 auto;
+    } 
     .contact{
         position: unset !important;
         top:0px !important;
@@ -1596,7 +1602,7 @@ font-size: 15px;
 }
 @media (min-width:1440px){
     .email-block .box-bg {
-        bottom: -29%;
+        bottom: -28%;
     }
 
 @media (min-width:1680px){
