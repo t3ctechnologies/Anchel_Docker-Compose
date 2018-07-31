@@ -1550,6 +1550,14 @@ font-size: 15px;
     } */
 
 }
+@media(max-width:1024px) and (min-width:1024px){
+	.flexible-block .flexImg{
+        width: 30%;
+        display: block;
+        position: relative;
+        bottom: -260px;
+    }
+}
 @media (min-width:1024px){
     .gif{
         position: relative;
@@ -1569,12 +1577,7 @@ font-size: 15px;
         position: relative;
         bottom: 60px;
     } */
-    .flexible-block .flexImg{
-        width: 30%;
-        display: block;
-        position: absolute;
-        bottom: -54%;
-    }
+    
     .footer p{
         text-align: center;
         color: #fff;
