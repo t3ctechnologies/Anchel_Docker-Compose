@@ -1552,10 +1552,10 @@ font-size: 15px;
 }
 @media(max-width:1024px) and (min-width:1024px){
 	.flexible-block .flexImg{
-        width: 30%;
-        display: block;
-        position: relative;
-        bottom: -260px;
+        width: 30% !important;
+        display: block !important;
+        position: relative !important;
+        bottom: -260px !important;
     }
 }
 @media (min-width:1024px){
