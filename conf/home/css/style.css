@@ -1525,7 +1525,7 @@ font-size: 15px;
         
     }
     .flexible-block .flexImg{
-        margin-left: unset !important;
+        margin-left: unset;
     }
     .email-block .box-bg{
         bottom: -17%;
