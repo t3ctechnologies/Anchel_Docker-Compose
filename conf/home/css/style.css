@@ -885,7 +885,7 @@ img {
     }
     .transfer-block .bg-img-block {
         top: 17%;
-        left: 53%;
+        left: 60%;
     }
     .transfer-block .left-block {
         margin-bottom: 50px;
@@ -953,9 +953,9 @@ img {
     .email-block .email-content .title-block h2 {
         margin-bottom: 0px;
     }
-    .email-block .box-bg {
+    /* .email-block .box-bg {
         bottom: -46%;
-    }
+    } */
     .operations-block .box {
         font-size: 18px;
         padding-right: 80px;
@@ -1316,10 +1316,10 @@ font-size: 15px;
     }
 }
 
-.email-block .email-content .img-block{
+/* .email-block .email-content .img-block{
     position: relative;
     bottom:140px;
-}
+} */
 .email-block .email-content .img-block ul li a i{
     padding: 22px;
     border: 4px solid #be6f34;
@@ -1330,36 +1330,36 @@ font-size: 15px;
     text-align: center;
     color: #be6f34;
 }
-.email-block .title-block{
+/* .email-block .title-block{
     position: relative;
     top: 130px;
     right: 155px;
-}
+} */
 .email-block .email-content .img-block ul li a i:hover{
     background: #264997;
     color: #fff;
     border-color: #264997;
 }
 
-.footer p{
+/* .footer p{
     text-align: center;
     color: #fff;
-}
-.contact p{
+} */
+/* .contact p{
     text-align: right;
     color: #fff;
-}
+} */
 .footer{
     position: relative;
     top: 120px;
 }
-.contact{
+/* .contact{
     position: relative;
     top: 65px;
-}
+} */
 .gif{
     float: right;
-    width: 400px;
+    width: 50%;
     position: relative;
     right: 100px;
     top: 220px;
@@ -1394,6 +1394,13 @@ font-size: 15px;
 } */
 
 @media (max-width:425px){
+    .footer p{
+        text-align: center;
+        color: #fff;
+    }
+    .contact p{
+        color: #fff;
+    }
     .email-block .email-content .img-block{
         position: unset !important; 
         bottom: 0px !important;
@@ -1450,6 +1457,13 @@ font-size: 15px;
 }
 
 @media (max-width:768px) and (min-width:768px){
+    .footer p{
+        text-align: center;
+        color: #fff;
+    }
+    .contact p{
+        color: #fff;
+    }
     .contact{
         position: relative;
         top: 50px;
@@ -1494,6 +1508,22 @@ font-size: 15px;
     .flexible-block .flexImg{
         display: none;
     }
+    .
+}
+@media (max-width:1023px){
+    .gif{
+        display: none;
+     }
+     .flexible-block .flexImg{
+        display:none !important;
+    }
+    .footer p{
+        text-align: center;
+        color: #fff;
+    }
+    .contact p{
+        color: #fff;
+    }
 }
 @media (max-width:1024px){
     .email-block .email-content .img-block {
@@ -1504,38 +1534,47 @@ font-size: 15px;
     .compliance-block .content-block p{
         font-size: 34px;
     }
-    .flexible-block .flexImg{
-        margin-top: -320px;
-        margin-left: unset !important;
-    }
+    
     .gif{
-        position: relative;
-        right: -98px;
-        
+       width: 25%;
     }
-    .transfer-block .bg-img-block img {
+    /* .transfer-block .bg-img-block img {
         width: 51% !important;
         margin-top: 50px;
-    }
+    } */
+
 }
 @media (min-width:1024px){
     .gif{
         position: relative;
-        right: -90px;
+        left: 20%;
         
     }
-    .flexible-block .flexImg{
-        margin-left: unset;
-    }
+    /* .flexible-block .flexImg{
+        margin-left: unset !important;
+    } */
     .email-block .box-bg{
-        bottom: -17%;
+        bottom: -13%;
     }
     .email-block .email-content .img-block {
         margin-right: 175px;
     }
-    .email-block .email-content .img-block{
+   /*  .email-block .email-content .img-block{
         position: relative;
         bottom: 60px;
+    } */
+    .flexible-block .flexImg{
+        width: 30%;
+        display: block;
+        position: absolute;
+        bottom: -54%;
+    }
+    .footer p{
+        text-align: center;
+        color: #fff;
+    }
+    .contact p{
+        color: #fff;
     }
 }
 .capabilities-block .monitor{
@@ -1579,9 +1618,20 @@ font-size: 15px;
     .capabilities-block .title-block h4{
         top:-280px;
     }
-	.flexible-block .flexImg{
-		margin-top: -320px;
-		margin-left: -250px;
-	}
     
+}
+.flexible-block .flexImg{
+    width: 35%;
+}
+.flexible-block .flexImg{
+    margin-top: -50%;
+    margin-left: -18%;
+}
+
+.footer p{
+    text-align: center;
+    color: #fff;
+}
+.contact p{
+    color: #fff;
 }
