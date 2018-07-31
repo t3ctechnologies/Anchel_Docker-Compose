@@ -991,6 +991,15 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+    .flexible-block.flexible-block1 {
+        display: table;
+        background: url(../images/cloud22.png) left top no-repeat;
+        width: 100%;
+        margin-top: -639px;
+        padding-top: 639px;
+        background-size: cover;
+        overflow: hidden;
+    }
     .logo-block img {
         width: 200px;
     }
@@ -1486,9 +1495,15 @@ font-size: 15px;
     }
     .email-block .title-block {
         position: relative;
-        top: 75px;
+       /*  top: 75px; */
         right: unset;
     }
+    .connectwithus{
+        display: flex;
+    }
+    .connectwithus ul{
+        margin: 0 auto !important;
+    }   
     .email-block .email-content .img-block ul li a i{
         font-size:unset;
         width: 20px;
@@ -1514,7 +1529,7 @@ font-size: 15px;
     .flexible-block .flexImg{
         display: none;
     }
-    .
+
 }
 @media (max-width:1023px){
     .gif{
@@ -1550,14 +1565,6 @@ font-size: 15px;
     } */
 
 }
-@media(min-width:1024px) and (max-width:1440px){
-	.flexible-block .flexImg{
-        width: 30% !important;
-        display: block !important;
-        position: relative !important;
-        bottom: 216px !important;
-    }
-}
 @media (min-width:1024px){
     .gif{
         position: relative;
@@ -1577,7 +1584,12 @@ font-size: 15px;
         position: relative;
         bottom: 60px;
     } */
-    
+    /* .flexible-block .flexImg{
+        width: 30%;
+        display: block;
+        position: absolute;
+        bottom: -115%;
+    } */
     .footer p{
         text-align: center;
         color: #fff;
@@ -1607,7 +1619,7 @@ font-size: 15px;
     .email-block .box-bg {
         bottom: -28%;
     }
-
+}
 @media (min-width:1680px){
     .email-block .box-bg {
         bottom: -24%;
@@ -1629,18 +1641,37 @@ font-size: 15px;
     }
     
 }
-.flexible-block .flexImg{
+/* .flexible-block .flexImg{
     width: 35%;
 }
 .flexible-block .flexImg{
     margin-top: -50%;
     margin-left: -18%;
-}
+} */
 
+.footer a{
+    text-decoration: none;
+}
 .footer p{
     text-align: center;
     color: #fff;
 }
 .contact p{
     color: #fff;
+}
+.connectwithus ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.connectwithus ul li{
+    padding: 0 5px;
+    float: right;
+}
+
+.data h4{
+    font-size: 24px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
 }
