@@ -1,20 +1,27 @@
 $(document).ready(function() {
+    var routes =[];
+    $('.loadpage').each(function(e) {
+        routes[$(this).attr("href")] = $(this).data('page');
+    });
     
+    var currentPage = $(location).attr("href");
+    var pathObj    = currentPage.split("#");
+    var defaultPage = "ancheluserwebPortal/introductionUser.html";
+    var path = (pathObj[1] !== undefined)? pathObj[1]:defaultPage;
+    var pageUrl = (routes['#'+path] !== undefined)? routes['#'+path] :defaultPage;
+    $.ajax({
+        url: pageUrl,
+        success: function(result){
+            $('.content-wrapper').html(result);
+        }
+    });
+
     $('.loadpage').click(function() {
-        var pageRef = $(this).attr('href');
-        var hash = this.hash;
-      /*   alert(hash); */
-       /*  var url = window.location.href+pageRef; */
-        
-        /* var href=url+pageRef; */
-        var page = $(this).data('page');
-        var url = window.location.hash  + page;
-        /*  var url = $(this).data('target'); */
+        var page = $(this).data('page');        
         $.ajax({
-            url: url,
+            url: page,
             success: function(result){
                 $('.content-wrapper').html(result);
-                /* location.replace(url); */
             }
         });
     });
@@ -37,18 +44,8 @@ $(document).ready(function() {
         }
         previousScroll = currentScroll;
     });
-    })
 
-$(window).on('load', function(){
-    $("#Layer5 a[href^='#']").on('click', function(e) {
-        e.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(this.hash).offset().top - 60
-            }, 1000, function(){
-                /* window.location.hash = hash; */
-        });
-    });
+
+
+
 });
-
-
