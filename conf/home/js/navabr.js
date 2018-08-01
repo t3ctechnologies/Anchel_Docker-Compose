@@ -18,3 +18,24 @@ $(window).on('load', function(){
         });
     });
 });
+var prevScrollpos = window.pageYOffset;
+$('#mynav').hide(); 
+    window.onscroll = function() {
+        $('#mynav').show(); 
+        var currentScrollPos = window.pageYOffset;
+        
+        if(currentScrollPos == 0){
+            $('#mynav').hide(); 
+        }
+        if (prevScrollpos > currentScrollPos) {
+            $('#myTopnav').show();
+            $('#mynav').removeClass('fixed');
+            document.getElementById("mynav").style.top = "0";
+            
+        } else {
+            $('#myTopnav').hide(); 
+            $('#mynav').addClass('fixed');
+            document.getElementById("mynav").style.top = "-60px";
+        }
+        prevScrollpos = currentScrollPos;
+    }

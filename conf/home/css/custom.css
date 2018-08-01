@@ -78,3 +78,12 @@
     font-weight: 800;
     font-family: 'Muli', sans-serif;
 }
+
+.treeview-menu .treeview .submenu li a{
+    font-size: 16px;
+    font-weight: normal;
+}
+/* .treeview-menu .treeview .submenu li a:active{
+    background: #f8b32a;
+    color: #264997;
+} */

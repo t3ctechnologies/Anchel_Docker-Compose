@@ -1,8 +1,16 @@
-.topnav {
+.mynav{
+    background: #e8e8e880;
+    /* background: #2121214d; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* transition: top 0.3s; */
+    z-index: 999999999;
+}
+#myTopnav {
     overflow: hidden;
     float: right;
-}
-  
+ }
 .topnav a {
     float: left;
     display: block;
@@ -16,10 +24,11 @@
 .topnav .icon {
     display: none;
 }
-/* .topnav a:hover{
-    background: #be6f34;
+.topnav a:hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
     color: #fff;
-} */
+}
   
 @media screen and (max-width: 600px) {
     .topnav a{
@@ -36,6 +45,7 @@
         position: relative;
         background: #eee;
         float: none;
+        width: 100%;
     }
     .topnav.responsive .icon {
         position: absolute;

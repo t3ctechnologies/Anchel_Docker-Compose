@@ -25,12 +25,12 @@ $(document).ready(function() {
             }
         });
     });
-    var previousScroll = 0,
+   /*  var previousScroll = 0,
     headerOrgOffset = $('#menu_bar').offset().top;
-
+ */
     /* $('#background').height($('#menu_bar').height()); */
 
-    $(window).scroll(function() {
+   /*  $(window).scroll(function() {
         var currentScroll = $(this).scrollTop();
         if(currentScroll > headerOrgOffset) {
             if (currentScroll > previousScroll) {
@@ -43,8 +43,8 @@ $(document).ready(function() {
             $('#menu_bar').removeClass('fixed');   
         }
         previousScroll = currentScroll;
-    });
-
+    }); */
+    
 
 
 

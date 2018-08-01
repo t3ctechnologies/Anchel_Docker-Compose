@@ -30,7 +30,7 @@ img {
 }
 .flexible-block.flexible-block1 {
     display: table;
-    background: url(../images/cloud2.png) left top no-repeat;
+    background: url(../images/cloud23.png) left top no-repeat;
     width: 100%;
     margin-top: -639px;
     padding-top: 639px;
@@ -293,6 +293,7 @@ img {
     line-height: 87px;
     margin: 0px;
     text-align: right;
+   
 }
 .capabilities-block .block-box.box1 {
     margin-top: 11%;
@@ -913,6 +914,9 @@ img {
     .compliance-block .content-block {
         font-size: 32px;
     }
+    .capabilities-block .monitor img{
+        width: 60%;
+    }
     .capabilities-block .block-box img {
         width: 60%;
     }
@@ -1299,7 +1303,7 @@ padding: 20px 49px 20px 80px;
 
 width: 110%;
 
-font-size: 15px;
+font-size: 12px;
 
 }
 .capabilities-container .title-block{
@@ -1427,14 +1431,13 @@ font-size: 15px;
         margin: 0 auto;
     } 
     .contact{
-        /* position: unset !important;
-        top:0px !important; */
-		position: relative !important;
-		top: -25px !important;
+        position: relative !important;
+        top: -36px !important;
+        text-align: center;
     }
     .footer {
         position: relative !important;
-        top: 98px !important;
+        top: 105px !important;
     }
     .li a{
         font-size: unset;
@@ -1570,7 +1573,7 @@ font-size: 15px;
 @media (min-width:1024px){
     .gif{
         position: relative;
-        left: 23%;
+        left: 20%;
         
     }
     /* .flexible-block .flexImg{
@@ -1582,16 +1585,9 @@ font-size: 15px;
     .email-block .email-content .img-block {
         margin-right: 175px;
     }
-   /*  .email-block .email-content .img-block{
-        position: relative;
-        bottom: 60px;
-    } */
-    /* .flexible-block .flexImg{
-        width: 30%;
-        display: block;
-        position: absolute;
-        bottom: -115%;
-    } */
+    .capabilities-block .title-block h4 {
+        bottom: 100px;
+    }
     .footer p{
         text-align: center;
         color: #fff;
@@ -1654,6 +1650,11 @@ font-size: 15px;
 .footer a{
     text-decoration: none;
 }
+.footer a:hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #fff;
+}
 .footer p{
     text-align: center;
     color: #fff;
@@ -1676,4 +1677,11 @@ font-size: 15px;
     font-size: 24px;
     font-family: 'Muli', sans-serif;
     font-weight: 600;
+}
+.mynav a{
+    text-align: center;
+    float: right;
+}
+.mynav a:hover{
+    color: #264997;
 }
