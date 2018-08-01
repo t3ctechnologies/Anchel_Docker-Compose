@@ -304,7 +304,7 @@ img {
 }
 .capabilities-block .block-box p {
     color: #fff;
-    font-size: 28px;
+    font-size: 29px;
 }
 .block-box.box2 {
     margin-top: -54px;
@@ -1472,6 +1472,18 @@ font-size: 12px;
     }
     .flexible-block .flexImg{
         display: none;
+    }
+    .capabilities-block .desc h4 {
+        color: #fff;
+        font-size: 24px;
+        font-family: 'Muli', sans-serif;
+    }
+    .capabilities-block .block-box p {
+        color: #fff;
+        font-size: 24px !important;
+    }
+    .flexible-block.flexible-block2{
+        background-size: contain;
     }
     
 }
