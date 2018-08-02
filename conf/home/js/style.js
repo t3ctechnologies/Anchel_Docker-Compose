@@ -6,7 +6,7 @@ $(document).ready(function() {
     
     var currentPage = $(location).attr("href");
     var pathObj    = currentPage.split("#");
-    var defaultPage = "ancheluserwebPortal/introductionUser.html";
+    var defaultPage = "ancheluserwebPortal/about.html";
     var path = (pathObj[1] !== undefined)? pathObj[1]:defaultPage;
     var pageUrl = (routes['#'+path] !== undefined)? routes['#'+path] :defaultPage;
     $.ajax({

@@ -592,6 +592,15 @@ img {
 }
 
 @media only screen and (min-width: 1400px) {
+    .main_wrapper{
+        max-width: 100%;
+        margin-left: 5%;
+        overflow: hidden;
+    }
+    .main-block{
+       /*  margin: 0 auto; */
+        width: 95%;
+    }
     .flexible-block.flexible-block1 {
         margin-top: -739px;
         padding-top: 639px;
@@ -651,7 +660,7 @@ img {
         height: 1500px;
         z-index: -1;
         top: -1%;
-        left: -1%;
+        left: 0%;
     }
     .operations-block .content-block {
         top: 8vw;
@@ -701,7 +710,8 @@ img {
     }
     .email-block {
         margin-top: -750px;
-        padding-top: 590px;
+        /* padding-top: 590px; */
+        padding-top: 630px;
     }
     .secure-block .box-block .left-block {
         margin-top: 22%;
@@ -715,6 +725,7 @@ img {
 }
 
 @media only screen and (max-width: 1500px) {
+    
     .flexible-block .model-block {
         padding-top: 200px;
         min-height: 650px;

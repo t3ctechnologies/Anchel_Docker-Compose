@@ -59,7 +59,17 @@
     }
 
 }
-
+@media (min-width:1400px){
+    .mynav {
+        background: #e8e8e880;
+       /*  background: #2121214d; */
+        position: fixed;
+        top: 0;
+        width: 90%;
+        /* transition: top 0.3s; */
+        z-index: 999999999;
+    }
+}
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
