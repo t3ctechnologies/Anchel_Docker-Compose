@@ -29,7 +29,11 @@
     text-decoration-style: solid;
     color: #fff;
 }
-  
+ @media (max-width:768px){
+    #mynav{
+        display: none !important;
+    }
+}
 @media screen and (max-width: 600px) {
     .topnav a{
         display: none;
