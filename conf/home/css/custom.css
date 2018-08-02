@@ -29,8 +29,8 @@
         padding: 0px;
     }
 	.AnchelWebPortal iframe{
-        width: 100%;
-        height: auto;
+        width: 100% !important;
+        height: auto !important;
     }
 }
 /* .treeview-menu > li:hover ul{
