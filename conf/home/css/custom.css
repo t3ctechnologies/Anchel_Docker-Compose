@@ -28,10 +28,10 @@
     .content-wrapper .content .about{
         padding: 0px;
     }
-    .AnchelWebPortal iframe{
+    /* .AnchelWebPortal iframe{
         width: 100%;
         height: auto;
-    }
+    } */
 }
 /* .treeview-menu > li:hover ul{
     background: #ecf0f5;
