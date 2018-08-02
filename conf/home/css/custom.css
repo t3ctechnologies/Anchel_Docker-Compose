@@ -28,9 +28,9 @@
     .content-wrapper .content .about{
         padding: 0px;
     }
-	.AnchelWebPortal iframe{
-        width: 100% !important;
-        height: auto !important;
+    .AnchelWebPortal iframe{
+        width: 100%;
+        height: auto;
     }
 }
 /* .treeview-menu > li:hover ul{
