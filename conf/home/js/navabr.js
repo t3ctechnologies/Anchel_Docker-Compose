@@ -21,16 +21,20 @@ $(window).on('load', function(){
 var prevScrollpos = window.pageYOffset;
 $('#mynav').hide(); 
     window.onscroll = function() {
-        $('#mynav').show(); 
+        /* $('#mynav').show();  */
         var currentScrollPos = window.pageYOffset;
         
-        if(currentScrollPos == 0){
+        if(currentScrollPos == 1){
             $('#mynav').hide(); 
         }
         if (prevScrollpos > currentScrollPos) {
+
             $('#myTopnav').show();
             $('#mynav').removeClass('fixed');
             document.getElementById("mynav").style.top = "0";
+            if(currentScrollPos == 0){
+                $('#mynav').hide(); 
+            }
             
         } else {
             $('#myTopnav').hide(); 
