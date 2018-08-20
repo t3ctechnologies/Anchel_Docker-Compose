@@ -1520,7 +1520,7 @@ font-size: 12px;
     }
     .footer {
         position: relative;
-        /* top: 98px; */
+        top: 98px;
     }
     .email-block .box-bg {
         bottom: -45%;
@@ -1717,6 +1717,7 @@ font-size: 12px;
 }
 
 
+
 @media  (min-width: 1600px) and (max-width: 1799px){
     .main_wrapper{
            max-width: 100%;
@@ -1741,291 +1742,27 @@ font-size: 12px;
               overflow: hidden;
           }
       }
-    @media  (min-width: 2100px) and (max-width: 2299px) {
-       .main_wrapper{
-              max-width: 100%;
-              margin-left: 10%;
-              margin-right: 10%;
-              overflow: hidden;
-          }
-      }@media  (min-width: 2300px) and (max-width: 2499px) {
-       .main_wrapper{
-              max-width: 100%;
-              margin-left: 15%;
-              margin-right: 15%;
-              overflow: hidden;
-          }
-      }
-      @media  (min-width: 2500px) and (max-width: 2699px) {
-       .main_wrapper{
-              max-width: 100%;
-              margin-left: 20%;
-              margin-right: 20%;
-              overflow: hidden;
-          }
-      }
-    @media  (min-width: 2700px) and (max-width: 2999px) {
+      @media  (min-width: 2100px) and (max-width: 2999px) {
        .main_wrapper{
               max-width: 100%;
               margin-left: 25%;
               margin-right: 25%;
               overflow: hidden;
           }
-          .flexible-block .model-block p {
-            margin-top: -29% !important;
-        }
-        .operations-block .content-block {
-            top: 0vw;
-        }
-        .operations-block .box1 {
-            background: #8959f6;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 20vw;
-            padding-right: 125px;
-        }
-        .operations-block .box2 {
-            background: #56cad4;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 9vw;
-            padding-right: 125px;
-        }
-        .operations-block .box3 {
-            background: #f9d348;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 11vw;
-            padding-right: 125px;
-        }
-        .operations-block .box4 {
-            background: #3933ff;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 14vw;
-            padding-right: 125px;
-        }
-        .block-box.box2 {
-            margin-left: -8%;
-            /* margin-top: -6%; */
-        }
-        .secure-block .box-bg2 {
-            position: absolute;
-            width: 95%;
-            height: 1000px;
-            background: #89aa42;
-            top: 45%;
-            z-index: -1;
-            right: -20%;
-            -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-        }
-        .compliance-block .content-block p {
-           
-            top: 1vw;
-            left: 19vw;
-            
-        }
-        .compliance-block {
-            margin-bottom: 8%;
-          
-        }
       }
       @media  (min-width: 3000px) and (max-width: 4499px) {
-       .main_wrapper{
-              max-width: 100%;
-              margin-left: 30%;
-              margin-right: 30%;
-              overflow: hidden;
-          }
-          .flexible-block .model-block p {
-            margin-top: -17% !important;
-        }
-        .operations-block .content-block {
-            top: 2vw;
-        }
-        .operations-block .box1 {
-            background: #8959f6;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 20vw;
-            padding-right: 125px;
-        }
-        .operations-block .box2 {
-            background: #56cad4;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 9vw;
-            padding-right: 125px;
-        }
-        .operations-block .box3 {
-            background: #f9d348;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 11vw;
-            padding-right: 125px;
-        }
-        .operations-block .box4 {
-            background: #3933ff;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 14vw;
-            padding-right: 125px;
-        }
-        .block-box.box2 {
-            margin-left: -8%;
-            /* margin-top: -6%; */
-        }
-        .secure-block .box-bg2 {
-            position: absolute;
-            width: 95%;
-            height: 1000px;
-            background: #89aa42;
-            top: 45%;
-            z-index: -1;
-            right: -20%;
-            -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-        }
-        .compliance-block .content-block p {
-            top: 1vw;
-            left: 12vw;
-            
-        }
-        .compliance-block {
-            margin-bottom: 8%;
-          
-        }
-      }
-      @media  (min-width: 4500px) and (max-width: 5999px) {
        .main_wrapper{
               max-width: 100%;
               margin-left: 35%;
               margin-right: 35%;
               overflow: hidden;
           }
-          .flexible-block .model-block p {
-            margin-top: -17% !important;
-        }
-        .operations-block .content-block {
-            top: 1vw;
-        }
-        .operations-block .box1 {
-            background: #8959f6;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 12vw;
-            padding-right: 125px;
-        }
-        .operations-block .box2 {
-            background: #56cad4;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 6vw;
-            padding-right: 125px;
-        }
-        .operations-block .box3 {
-            background: #f9d348;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 8vw;
-            padding-right: 125px;
-        }
-        .operations-block .box4 {
-            background: #3933ff;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 10vw;
-            padding-right: 125px;
-        }
-        .block-box.box2 {
-            margin-left: -8%;
-            /* margin-top: -6%; */
-        }
-        .secure-block .box-bg2 {
-            position: absolute;
-            width: 95%;
-            height: 1000px;
-            background: #89aa42;
-            top: 45%;
-            z-index: -1;
-            right: -20%;
-            -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-        }
-        .compliance-block .content-block p {
-            top: 1vw;
-            left: 12vw;
-            
-        }
-        .compliance-block {
-            margin-bottom: 8%;
-          
-        }
       }
-     @media  (min-width: 6000px) {
+      @media  (min-width: 4500px) {
        .main_wrapper{
               max-width: 100%;
-              margin-left: 40%;
-              margin-right: 40%;
+              margin-left: 35%;
+              margin-right: 35%;
               overflow: hidden;
           }
-		            .flexible-block .model-block p {
-            margin-top: -17% !important;
-        }
-        .operations-block .content-block {
-            top: 1vw;
-        }
-        .operations-block .box1 {
-            background: #8959f6;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 7vw;
-            padding-right: 125px;
-        }
-        .operations-block .box2 {
-            background: #56cad4;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 3vw;
-            padding-right: 125px;
-        }
-        .operations-block .box3 {
-            background: #f9d348;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 4vw;
-            padding-right: 125px;
-        }
-        .operations-block .box4 {
-            background: #3933ff;
-            margin-bottom: 24px;
-            padding: 20px 0;
-            right: 6vw;
-            padding-right: 125px;
-        }
-        .block-box.box2 {
-            margin-left: -8%;
-            /* margin-top: -6%; */
-        }
-        .secure-block .box-bg2 {
-            position: absolute;
-            width: 95%;
-            height: 1000px;
-            background: #89aa42;
-            top: 45%;
-            z-index: -1;
-            right: -20%;
-            -webkit-transform: rotate(-30deg);
-            transform: rotate(-30deg);
-        }
-        .compliance-block .content-block p {
-            top: 1vw;
-            left: 8vw;
-            
-        }
-        .compliance-block {
-            margin-bottom: 8%;
-          
-        }
       }
